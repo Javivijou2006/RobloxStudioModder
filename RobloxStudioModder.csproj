@@ -1,0 +1,98 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Content\Icons\ColorfullDark\BigPreview.png" />
+    <None Remove="Content\Icons\ColorfullDark\ClassImages.png" />
+    <None Remove="Content\Icons\ColorfullDark\IconInfo.xml" />
+    <None Remove="Content\Icons\ColorfullDark\SmallPreview.png" />
+    <None Remove="Content\Icons\ColorfullLight\BigPreview.png" />
+    <None Remove="Content\Icons\ColorfullLight\ClassImages.png" />
+    <None Remove="Content\Icons\ColorfullLight\IconInfo.xml" />
+    <None Remove="Content\Icons\ColorfullLight\SmallPreview.png" />
+    <None Remove="Content\Icons\MonoDark\BigPreview.png" />
+    <None Remove="Content\Icons\MonoDark\ClassImages.png" />
+    <None Remove="Content\Icons\MonoDark\IconInfo.xml" />
+    <None Remove="Content\Icons\MonoDark\SmallPreview.png" />
+    <None Remove="Content\Icons\MonoLight\BigPreview.png" />
+    <None Remove="Content\Icons\MonoLight\ClassImages.png" />
+    <None Remove="Content\Icons\MonoLight\IconInfo.xml" />
+    <None Remove="Content\Icons\MonoLight\SmallPreview.png" />
+    <None Remove="ExploreIconsButton.png" />
+    <None Remove="StudioLogo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Content\Icons\ColorfullDark\BigPreview.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Content\Icons\ColorfullDark\ClassImages.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Content\Icons\ColorfullDark\IconInfo.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Content\Icons\ColorfullDark\SmallPreview.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Content\Icons\ColorfullLight\BigPreview.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Content\Icons\ColorfullLight\ClassImages.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Content\Icons\ColorfullLight\IconInfo.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Content\Icons\ColorfullLight\SmallPreview.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Content\Icons\MonoDark\BigPreview.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Content\Icons\MonoDark\ClassImages.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Content\Icons\MonoDark\IconInfo.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Content\Icons\MonoDark\SmallPreview.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Content\Icons\MonoLight\BigPreview.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Content\Icons\MonoLight\ClassImages.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Content\Icons\MonoLight\IconInfo.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Content\Icons\MonoLight\SmallPreview.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="ExploreIconsButton.png" />
+    <Resource Include="StudioLogo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="NewIconSetClass.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Content\ExploreIconsButton.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,43 @@
+﻿<Window x:Class="RobloxStudioModder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RobloxStudioModder"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="Window1" Height="450" Width="800">
+    <Grid Cursor="AppStarting">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="799*"/>
+        </Grid.ColumnDefinitions>
+
+        <!--Loading screen-->
+        <Label x:Name="name" Content="Roblox Studio Modder" HorizontalAlignment="Center" Margin="0,177,0,0" VerticalAlignment="Top" FontFamily="Noto Sans Arabic UI" FontSize="30" Grid.Column="6" Height="51" Width="318"/>
+        <Image x:Name="logo" HorizontalAlignment="Stretch" Height="111" Margin="0,57,0,0" VerticalAlignment="Top" Width="114" RenderTransformOrigin="0.5,0.513" Source="./StudioLogo.png" Cursor="AppStarting" Grid.Column="6"/>
+        <Label x:Name="loading" HorizontalAlignment="Stretch" Panel.ZIndex="-1" Margin="0,177,0,0" VerticalAlignment="Top" FontFamily="Nirmala UI Semilight" FontSize="16" FontWeight="Normal" Grid.Column="6" Height="241" Width="795" MaxWidth="547" FlowDirection="LeftToRight" VerticalContentAlignment="Center" Content="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" HorizontalContentAlignment="Center"/>
+
+        <!--Home screen-->
+        <Label x:Name="presentation" Content="Welcome back!" HorizontalAlignment="Left" Margin="108,27,0,0" VerticalAlignment="Top" Width="376" Height="60" FontFamily="Noto Sans Arabic" FontSize="25" FontWeight="Normal" Opacity="0" Grid.Column="6"/>
+        <Image x:Name="MainMenu_ExplorerIcons" HorizontalAlignment="Left" Height="66" Margin="8,162,0,0" VerticalAlignment="Top" Width="230" Source="/ExploreIconsButton.png" Mouse.MouseDown="MainMenu_ExplorerIcons_MouseDown" MouseEnter="MainMenu_ExplorerIcons_MouseEnter" MouseLeave="MainMenu_ExplorerIcons_MouseLeave" Cursor="Hand" Opacity="0" Grid.Column="6" Panel.ZIndex="5"/>
+        <Label x:Name="StudioVersionLabel" Content="Studio version: " HorizontalAlignment="Left" Margin="108,79,0,0" VerticalAlignment="Top" Width="376" Height="60" FontFamily="Noto Sans Arabic" FontSize="15" FontWeight="Normal" Opacity="0" Grid.Column="6"/>
+
+        <!---Icon selection-->
+        <Image x:Name="ColorfullDark" Source="./Content/Icons/ColorfullDark/SmallPreview.png" Height="95" Width="145" Grid.Column="6" Margin="28,195,626,144" MouseEnter="ColorfullDark_MouseEnter" MouseLeave="ColorfullDark_MouseLeave" MouseDown="ColorfullDark_MouseDown" Stretch="UniformToFill" Opacity="0"/>
+        <Image x:Name="ColorfullLight" Source="./Content/Icons/ColorfullLight/SmallPreview.png" Height="95" Width="145" Grid.Column="6" Margin="211,195,443,144" MouseEnter="ColorfullLight_MouseEnter" MouseLeave="ColorfullLight_MouseLeave" MouseDown="ColorfullLight_MouseDown" Stretch="UniformToFill" Opacity="0"/>
+        <Image x:Name="MonoDark" Source="./Content/Icons/MonoDark/SmallPreview.png" Height="95" Width="145" Grid.Column="6" Margin="424,195,230,144" MouseEnter="MonoDark_MouseEnter" MouseLeave="MonoDark_MouseLeave" MouseDown="MonoDark_MouseDown" Stretch="UniformToFill" Opacity="0"/>
+        <Image x:Name="MonoLight" Source="./Content/Icons/MonoLight/SmallPreview.png" Height="95" Width="145" Grid.Column="6" Margin="607,195,47,144" MouseEnter="MonoLight_MouseEnter" MouseLeave="MonoLight_MouseLeave" MouseDown="MonoLight_MouseDown" Stretch="UniformToFill" Opacity="0"/>
+
+        <!--Using these labels as data storages lol-->
+        <Label x:Name="Path" Content="Label" HorizontalAlignment="Center" Margin="0,434,0,0" VerticalAlignment="Top" Opacity="0" Visibility="Hidden" Height="0" Width="38" Grid.Column="5" Grid.ColumnSpan="2"/>
+        <Label x:Name="Version" Content="Label" HorizontalAlignment="Center" Margin="0,434,0,0" VerticalAlignment="Top" Opacity="0" Visibility="Hidden" Height="0" Width="38" Grid.Column="5" Grid.ColumnSpan="2"/>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Icon>
+	<Title>Platinum Mono</Title>
+	<Theme>Light</Theme>
+	<Price>Free</Price> <!--Only suporting free icon sets by the moment-->
+	<SmallPreview>SmallPreview.png</SmallPreview>
+	<BigPreview>BigPreview.png</BigPreview>
+	<Designer>elttob</Designer>
+	<DesignerWebsite>https://elttob.github.io/</DesignerWebsite>
+</Icon>
