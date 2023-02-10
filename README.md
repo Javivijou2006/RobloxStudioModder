@@ -1,6 +1,6 @@
 # Roblox Studio Modder
 
-A windows app make with c#, on .NET and WFP, that helps you modding roblox studio.
+A windows app made with c#, on .NET and WFP, that helps modding roblox studio.
 
 ## Releases
 Check out the releases page [here](https://github.com/Javivijou2006/RobloxStudioModder/releases/tag/v0.0.1-alpha)
